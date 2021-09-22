@@ -19,11 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Masukkan Body"/>
-    <EditText
-        android:id="@+id/etToken"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Masukkan Token"/>
+<!--    <EditText-->
+<!--        android:id="@+id/etToken"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:hint="Masukkan Token"/>-->
 
     <Button
         android:id="@+id/btnKirim"

@@ -25,11 +25,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         FirebaseService.sharedPref = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
 
-        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC).addOnCompleteListener(OnCompleteListener { task ->
             if (!task.isSuccessful) {
                 Log.w(TAG, "Token Failed", task.exception)
+                return@OnCompleteListener
             }
-            val token = task.result
+
         })
 
         FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
@@ -38,9 +39,8 @@ class MainActivity : AppCompatActivity() {
             val title = etTitle.text.toString()
             val message = etBody.text.toString()
 
-            val recipientToken = etToken.text.toString()
 
-            if(title.isNotEmpty() && message.isNotEmpty() && recipientToken.isNotEmpty()) {
+            if(title.isNotEmpty() && message.isNotEmpty()) {
                 PushNotification(
                     NotificationData(title, message),
                     TOPIC
@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
            etTitle.text.clear()
             etBody.text.clear()
-            etToken.text.clear()
         }
     }
 
