@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274810110928",
+    "project_id": "notificationretrofit-d2415",
+    "storage_bucket": "notificationretrofit-d2415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274810110928:android:21df6dc4431162e8c4efd5",
+        "android_client_info": {
+          "package_name": "com.fiqih.retrofitnotificationfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274810110928-m5cb4cv96nlf6hh3g4oh8tqu26unp3hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXi2iv0NtRpck1NCdtcQ2tKbz7EUJTF5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274810110928-m5cb4cv96nlf6hh3g4oh8tqu26unp3hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
